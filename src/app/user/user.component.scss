@@ -1,0 +1,23 @@
+.subnavigation {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .subnavigation-link {
+    display: block;
+    padding: 4px 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      color: #2452e9;
+    }
+  }
+}
+
+

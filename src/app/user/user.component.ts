@@ -8,28 +8,17 @@ interface User {
 
 @Component({
   selector: 'app-user',
-  template: `
-    <p>User List</p>
-    <ul>
-      <li *ngFor="let user of users">
-        <a [routerLink]="user.id"
-        [routerLinkActiveOptions]="{ exact: true }"
-        routerLinkActive="active">{{ user.name }}</a>
-      </li>
-    </ul>
-    <router-outlet></router-outlet>    
-  `,
-  styles: [`
-    a:hover, a.active { color: red; }
-  `]
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.scss']
 })
 export class UserComponent implements OnInit {
   users: User[];
 
   ngOnInit() {
     this.users = [ 
-      { id: 1, name: 'User-1' },
-      { id: 2, name: 'User-2' },
+      { id: 1, name: 'User 1' },
+      { id: 2, name: 'User 2' },
+      { id: 3, name: 'User 3' },
     ];
   }
 }
