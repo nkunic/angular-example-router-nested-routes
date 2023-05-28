@@ -4,11 +4,12 @@
     <li *ngFor="let user of users">
       <a
         [routerLink]="user.id"
-        class="navigation-link"
+        class="subnavigation-link"
         routerLinkActive="subnavigation__link--active"
-        [routerLinkActiveOptions]="{ exact: true }">
-          {{ user.name }}
-        </a>
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        {{ user.name }}
+      </a>
     </li>
   </ul>
 </div>
