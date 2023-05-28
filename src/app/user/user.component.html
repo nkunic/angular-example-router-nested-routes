@@ -5,10 +5,10 @@
       <a
         [routerLink]="user.id"
         class="navigation-link"
-        [routerLinkActiveOptions]="{ exact: true }"
         routerLinkActive="subnavigation__link--active"
-        >{{ user.name }}</a
-      >
+        [routerLinkActiveOptions]="{ exact: true }">
+          {{ user.name }}
+      </a>
     </li>
   </ul>
 </div>
