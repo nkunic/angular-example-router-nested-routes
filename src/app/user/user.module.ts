@@ -8,7 +8,6 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 @NgModule({
   imports: [
     CommonModule,
-    /* 라우트 모듈의 등록 */
     UserRoutingModule
   ],
   declarations: [
